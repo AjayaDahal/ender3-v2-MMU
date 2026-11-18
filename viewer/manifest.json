@@ -1,0 +1,2466 @@
+{
+  "project": "Ender-MMU v0.4 (Klipper + Happy Hare)",
+  "units": "mm, Z up, front -Y, desk Z=0, top-bar top Z=465",
+  "parts": [
+    {
+      "name": "mmu_body",
+      "file": "mmu_body.stl",
+      "pos": [
+        0,
+        0,
+        473
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        0,
+        0
+      ],
+      "qty": 1,
+      "color": "#2f6db5",
+      "label": "MMU body \u2014 4 lanes, drive shaft + 4 gear pockets, idler slots, cam towers"
+    },
+    {
+      "name": "idler_block",
+      "file": "idler_block.stl",
+      "pos": [
+        -42,
+        0,
+        506.55
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        0,
+        45
+      ],
+      "qty": 4,
+      "color": "#00897b",
+      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 1)"
+    },
+    {
+      "name": "idler_block",
+      "file": "idler_block.stl",
+      "pos": [
+        -14,
+        0,
+        506.55
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        0,
+        45
+      ],
+      "qty": 4,
+      "color": "#00897b",
+      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 2)"
+    },
+    {
+      "name": "idler_block",
+      "file": "idler_block.stl",
+      "pos": [
+        14,
+        0,
+        506.55
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        0,
+        45
+      ],
+      "qty": 4,
+      "color": "#00897b",
+      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 3)"
+    },
+    {
+      "name": "idler_block",
+      "file": "idler_block.stl",
+      "pos": [
+        42,
+        0,
+        506.55
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        0,
+        45
+      ],
+      "qty": 4,
+      "color": "#00897b",
+      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 4)"
+    },
+    {
+      "name": "idler_follower",
+      "file": "idler_follower.stl",
+      "pos": [
+        -42,
+        0,
+        518.55
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        0,
+        65
+      ],
+      "qty": 4,
+      "color": "#4db6ac",
+      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 1)"
+    },
+    {
+      "name": "idler_follower",
+      "file": "idler_follower.stl",
+      "pos": [
+        -14,
+        0,
+        518.55
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        0,
+        65
+      ],
+      "qty": 4,
+      "color": "#4db6ac",
+      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 2)"
+    },
+    {
+      "name": "idler_follower",
+      "file": "idler_follower.stl",
+      "pos": [
+        14,
+        0,
+        518.55
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        0,
+        65
+      ],
+      "qty": 4,
+      "color": "#4db6ac",
+      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 3)"
+    },
+    {
+      "name": "idler_follower",
+      "file": "idler_follower.stl",
+      "pos": [
+        42,
+        0,
+        518.55
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        0,
+        65
+      ],
+      "qty": 4,
+      "color": "#4db6ac",
+      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 4)"
+    },
+    {
+      "name": "selector_camshaft",
+      "file": "selector_camshaft.stl",
+      "pos": [
+        0,
+        0,
+        535.05
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        0,
+        80
+      ],
+      "qty": 1,
+      "color": "#e65100",
+      "label": "Selector camshaft \u2014 lobes at 40/75/110/145\u00b0, shown at 0\u00b0 (all released)"
+    },
+    {
+      "name": "servo_coupler",
+      "file": "servo_coupler.stl",
+      "pos": [
+        -84,
+        0,
+        535.05
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        -40,
+        0,
+        80
+      ],
+      "qty": 1,
+      "color": "#fb8c00",
+      "label": "Servo coupler \u2014 MG996R horn to 6 mm cam rod"
+    },
+    {
+      "name": "servo_mount",
+      "file": "servo_mount.stl",
+      "pos": [
+        0,
+        0,
+        473
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        -60,
+        0,
+        0
+      ],
+      "qty": 1,
+      "color": "#558b2f",
+      "label": "Servo mount \u2014 MG996R spline on the camshaft axis"
+    },
+    {
+      "name": "merger",
+      "file": "merger.stl",
+      "pos": [
+        0,
+        0,
+        473
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        -60,
+        0
+      ],
+      "qty": 1,
+      "color": "#5e35b1",
+      "label": "Merger \u2014 4 lanes to 1 outlet (PC4-M10)"
+    },
+    {
+      "name": "mcu_carrier",
+      "file": "mcu_carrier.stl",
+      "pos": [
+        0,
+        -85,
+        515
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        -60,
+        60
+      ],
+      "qty": 1,
+      "color": "#2e7d32",
+      "label": "MMU electronics plate \u2014 Pico (Klipper MCU), TMC2209 perfboard, 6 V servo buck"
+    },
+    {
+      "name": "electronics_cover",
+      "file": "electronics_cover.stl",
+      "pos": [
+        0,
+        -85,
+        549
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        -60,
+        110
+      ],
+      "qty": 1,
+      "color": "#546e7a",
+      "label": "Electronics cover \u2014 vents over the driver, cable exits"
+    },
+    {
+      "name": "topbar_clamp",
+      "file": "topbar_clamp.stl",
+      "pos": [
+        -55,
+        0,
+        445
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        0,
+        -50
+      ],
+      "qty": 2,
+      "color": "#6d4c41",
+      "label": "Top-bar clamp \u00d72 \u2014 saddle on the 2020 top bar (left)"
+    },
+    {
+      "name": "topbar_clamp",
+      "file": "topbar_clamp.stl",
+      "pos": [
+        55,
+        0,
+        445
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        0,
+        -50
+      ],
+      "qty": 2,
+      "color": "#6d4c41",
+      "label": "Top-bar clamp \u00d72 \u2014 saddle on the 2020 top bar (right)"
+    },
+    {
+      "name": "spool_cradle",
+      "file": "spool_cradle.stl",
+      "pos": [
+        -150,
+        340,
+        0
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        60,
+        0
+      ],
+      "qty": 4,
+      "color": "#6d4c41",
+      "label": "Spool cradle \u00d74 \u2014 lane 1, rollers + PTFE guide"
+    },
+    {
+      "name": "spool_cradle",
+      "file": "spool_cradle.stl",
+      "pos": [
+        -50,
+        340,
+        0
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        60,
+        0
+      ],
+      "qty": 4,
+      "color": "#6d4c41",
+      "label": "Spool cradle \u00d74 \u2014 lane 2, rollers + PTFE guide"
+    },
+    {
+      "name": "spool_cradle",
+      "file": "spool_cradle.stl",
+      "pos": [
+        50,
+        340,
+        0
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        60,
+        0
+      ],
+      "qty": 4,
+      "color": "#6d4c41",
+      "label": "Spool cradle \u00d74 \u2014 lane 3, rollers + PTFE guide"
+    },
+    {
+      "name": "spool_cradle",
+      "file": "spool_cradle.stl",
+      "pos": [
+        150,
+        340,
+        0
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "burst": [
+        0,
+        60,
+        0
+      ],
+      "qty": 4,
+      "color": "#6d4c41",
+      "label": "Spool cradle \u00d74 \u2014 lane 4, rollers + PTFE guide"
+    },
+    {
+      "name": "spool_roller",
+      "file": "spool_roller.stl",
+      "pos": [
+        -188.0,
+        300,
+        30
+      ],
+      "rot": [
+        0,
+        90,
+        0
+      ],
+      "burst": [
+        0,
+        60,
+        30
+      ],
+      "qty": 8,
+      "color": "#8d6e63",
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+    },
+    {
+      "name": "spool_roller",
+      "file": "spool_roller.stl",
+      "pos": [
+        -188.0,
+        380,
+        30
+      ],
+      "rot": [
+        0,
+        90,
+        0
+      ],
+      "burst": [
+        0,
+        60,
+        30
+      ],
+      "qty": 8,
+      "color": "#8d6e63",
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+    },
+    {
+      "name": "spool_roller",
+      "file": "spool_roller.stl",
+      "pos": [
+        -88.0,
+        300,
+        30
+      ],
+      "rot": [
+        0,
+        90,
+        0
+      ],
+      "burst": [
+        0,
+        60,
+        30
+      ],
+      "qty": 8,
+      "color": "#8d6e63",
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+    },
+    {
+      "name": "spool_roller",
+      "file": "spool_roller.stl",
+      "pos": [
+        -88.0,
+        380,
+        30
+      ],
+      "rot": [
+        0,
+        90,
+        0
+      ],
+      "burst": [
+        0,
+        60,
+        30
+      ],
+      "qty": 8,
+      "color": "#8d6e63",
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+    },
+    {
+      "name": "spool_roller",
+      "file": "spool_roller.stl",
+      "pos": [
+        12.0,
+        300,
+        30
+      ],
+      "rot": [
+        0,
+        90,
+        0
+      ],
+      "burst": [
+        0,
+        60,
+        30
+      ],
+      "qty": 8,
+      "color": "#8d6e63",
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+    },
+    {
+      "name": "spool_roller",
+      "file": "spool_roller.stl",
+      "pos": [
+        12.0,
+        380,
+        30
+      ],
+      "rot": [
+        0,
+        90,
+        0
+      ],
+      "burst": [
+        0,
+        60,
+        30
+      ],
+      "qty": 8,
+      "color": "#8d6e63",
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+    },
+    {
+      "name": "spool_roller",
+      "file": "spool_roller.stl",
+      "pos": [
+        112.0,
+        300,
+        30
+      ],
+      "rot": [
+        0,
+        90,
+        0
+      ],
+      "burst": [
+        0,
+        60,
+        30
+      ],
+      "qty": 8,
+      "color": "#8d6e63",
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+    },
+    {
+      "name": "spool_roller",
+      "file": "spool_roller.stl",
+      "pos": [
+        112.0,
+        380,
+        30
+      ],
+      "rot": [
+        0,
+        90,
+        0
+      ],
+      "burst": [
+        0,
+        60,
+        30
+      ],
+      "qty": 8,
+      "color": "#8d6e63",
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+    }
+  ],
+  "frame": [
+    {
+      "name": "top_bar_2020",
+      "size": [
+        330,
+        20,
+        20
+      ],
+      "pos": [
+        0,
+        0,
+        455
+      ],
+      "label": "Top bar \u2014 2020 \u00d7 330"
+    },
+    {
+      "name": "z_upright_left",
+      "size": [
+        20,
+        40,
+        420
+      ],
+      "pos": [
+        -155,
+        0,
+        235
+      ],
+      "label": "Z upright L \u2014 2040 \u00d7 420"
+    },
+    {
+      "name": "z_upright_right",
+      "size": [
+        20,
+        40,
+        420
+      ],
+      "pos": [
+        155,
+        0,
+        235
+      ],
+      "label": "Z upright R \u2014 2040 \u00d7 420"
+    },
+    {
+      "name": "x_beam_2020",
+      "size": [
+        345,
+        20,
+        20
+      ],
+      "pos": [
+        0,
+        -30,
+        300
+      ],
+      "label": "X beam \u2014 2020 \u00d7 345 (moves in Z)"
+    },
+    {
+      "name": "base_outline",
+      "size": [
+        440,
+        410,
+        25
+      ],
+      "pos": [
+        0,
+        0,
+        12.5
+      ],
+      "label": "Base outline \u2014 440 \u00d7 410"
+    },
+    {
+      "name": "bed_220",
+      "size": [
+        220,
+        220,
+        3
+      ],
+      "pos": [
+        0,
+        0,
+        29.5
+      ],
+      "label": "Bed \u2014 220 \u00d7 220"
+    }
+  ],
+  "extras": [
+    {
+      "name": "feeder_motor",
+      "kind": "box",
+      "size": [
+        40,
+        42,
+        42
+      ],
+      "pos": [
+        100,
+        0,
+        496.1
+      ],
+      "color": "#37474f",
+      "label": "NEMA 17 42-40 (purchased) \u2014 drives all 4 lanes through one shaft"
+    },
+    {
+      "name": "drive_shaft",
+      "kind": "cyl",
+      "r": 2.5,
+      "len": 140,
+      "axis": "x",
+      "pos": [
+        -12,
+        0,
+        496.1
+      ],
+      "color": "#90a4ae",
+      "label": "5 mm D-shaft (purchased), retained by the gears in their pockets"
+    },
+    {
+      "name": "coupler_5_5",
+      "kind": "cyl",
+      "r": 9.5,
+      "len": 25,
+      "axis": "x",
+      "pos": [
+        67.5,
+        0,
+        496.1
+      ],
+      "color": "#b0bec5",
+      "label": "5\u20135 mm flexible coupler (purchased)"
+    },
+    {
+      "name": "bearing_625_L",
+      "kind": "cyl",
+      "r": 8,
+      "len": 5,
+      "axis": "x",
+      "pos": [
+        -77.5,
+        0,
+        496.1
+      ],
+      "color": "#cfd8dc",
+      "label": "625ZZ shaft bearing (purchased)"
+    },
+    {
+      "name": "bearing_625_R",
+      "kind": "cyl",
+      "r": 8,
+      "len": 5,
+      "axis": "x",
+      "pos": [
+        53.5,
+        0,
+        496.1
+      ],
+      "color": "#cfd8dc",
+      "label": "625ZZ shaft bearing (purchased)"
+    },
+    {
+      "name": "drive_gear_1",
+      "kind": "cyl",
+      "r": 5.5,
+      "len": 11,
+      "axis": "x",
+      "pos": [
+        -42,
+        0,
+        496.1
+      ],
+      "color": "#c9a227",
+      "label": "MK8 drive gear, lane 1 (purchased), set screw on the D-flat"
+    },
+    {
+      "name": "drive_gear_2",
+      "kind": "cyl",
+      "r": 5.5,
+      "len": 11,
+      "axis": "x",
+      "pos": [
+        -14,
+        0,
+        496.1
+      ],
+      "color": "#c9a227",
+      "label": "MK8 drive gear, lane 2 (purchased), set screw on the D-flat"
+    },
+    {
+      "name": "drive_gear_3",
+      "kind": "cyl",
+      "r": 5.5,
+      "len": 11,
+      "axis": "x",
+      "pos": [
+        14,
+        0,
+        496.1
+      ],
+      "color": "#c9a227",
+      "label": "MK8 drive gear, lane 3 (purchased), set screw on the D-flat"
+    },
+    {
+      "name": "drive_gear_4",
+      "kind": "cyl",
+      "r": 5.5,
+      "len": 11,
+      "axis": "x",
+      "pos": [
+        42,
+        0,
+        496.1
+      ],
+      "color": "#c9a227",
+      "label": "MK8 drive gear, lane 4 (purchased), set screw on the D-flat"
+    },
+    {
+      "name": "idler_623_1",
+      "kind": "cyl",
+      "r": 5.0,
+      "len": 4,
+      "axis": "x",
+      "pos": [
+        -42,
+        0,
+        509.55
+      ],
+      "color": "#cfd8dc",
+      "label": "623ZZ idler bearing, lane 1 (purchased)"
+    },
+    {
+      "name": "idler_623_2",
+      "kind": "cyl",
+      "r": 5.0,
+      "len": 4,
+      "axis": "x",
+      "pos": [
+        -14,
+        0,
+        509.55
+      ],
+      "color": "#cfd8dc",
+      "label": "623ZZ idler bearing, lane 2 (purchased)"
+    },
+    {
+      "name": "idler_623_3",
+      "kind": "cyl",
+      "r": 5.0,
+      "len": 4,
+      "axis": "x",
+      "pos": [
+        14,
+        0,
+        509.55
+      ],
+      "color": "#cfd8dc",
+      "label": "623ZZ idler bearing, lane 3 (purchased)"
+    },
+    {
+      "name": "idler_623_4",
+      "kind": "cyl",
+      "r": 5.0,
+      "len": 4,
+      "axis": "x",
+      "pos": [
+        42,
+        0,
+        509.55
+      ],
+      "color": "#cfd8dc",
+      "label": "623ZZ idler bearing, lane 4 (purchased)"
+    },
+    {
+      "name": "cam_rod",
+      "kind": "cyl",
+      "r": 3,
+      "len": 140,
+      "axis": "x",
+      "pos": [
+        -6,
+        0,
+        535.05
+      ],
+      "color": "#90a4ae",
+      "label": "6 mm steel cam rod with a filed flat (purchased)"
+    },
+    {
+      "name": "selector_servo",
+      "kind": "box",
+      "size": [
+        40,
+        40.7,
+        19.7
+      ],
+      "pos": [
+        -108,
+        -10.0,
+        535.05
+      ],
+      "color": "#6a1b9a",
+      "label": "MG996R selector servo (purchased), length along Y, spline on the cam axis"
+    },
+    {
+      "name": "pico",
+      "kind": "box",
+      "size": [
+        51,
+        21,
+        4
+      ],
+      "pos": [
+        -24,
+        -59,
+        526
+      ],
+      "color": "#1b5e20",
+      "label": "Raspberry Pi Pico (purchased) \u2014 Klipper MCU for the MMU"
+    },
+    {
+      "name": "tmc2209_board",
+      "kind": "box",
+      "size": [
+        40,
+        60,
+        22
+      ],
+      "pos": [
+        22,
+        -77,
+        535
+      ],
+      "color": "#283593",
+      "label": "Perfboard: TMC2209 StepStick + 100 \u00b5F + JST headers (purchased)"
+    },
+    {
+      "name": "servo_buck",
+      "kind": "box",
+      "size": [
+        43,
+        21,
+        14
+      ],
+      "pos": [
+        -24,
+        -105,
+        526
+      ],
+      "color": "#455a64",
+      "label": "24 \u2192 6 V buck for the servo (purchased)"
+    },
+    {
+      "name": "gate_sensor",
+      "kind": "box",
+      "size": [
+        20,
+        6.5,
+        10
+      ],
+      "pos": [
+        0,
+        -106,
+        488
+      ],
+      "color": "#b71c1c",
+      "label": "KW11 roller gate sensor (purchased)"
+    },
+    {
+      "name": "stock_extruder",
+      "kind": "box",
+      "size": [
+        45,
+        40,
+        45
+      ],
+      "pos": [
+        -150,
+        -10,
+        324
+      ],
+      "color": "#37474f",
+      "label": "Stock Ender-3 V2 extruder (left end of the gantry, moves in Z)"
+    },
+    {
+      "name": "pi_and_display",
+      "kind": "box",
+      "size": [
+        110,
+        30,
+        80
+      ],
+      "pos": [
+        290,
+        -120,
+        110
+      ],
+      "color": "#2e7d32",
+      "label": "Your Raspberry Pi 3B/4 + display (KlipperScreen), at the printer, USB to the board + Pico"
+    },
+    {
+      "name": "spool_1",
+      "kind": "cyl",
+      "r": 100.0,
+      "len": 70,
+      "axis": "x",
+      "pos": [
+        -150,
+        340,
+        136.752
+      ],
+      "color": "#e53935",
+      "label": "1 kg spool, lane 1 (T0)"
+    },
+    {
+      "name": "spool_2",
+      "kind": "cyl",
+      "r": 100.0,
+      "len": 70,
+      "axis": "x",
+      "pos": [
+        -50,
+        340,
+        136.752
+      ],
+      "color": "#43a047",
+      "label": "1 kg spool, lane 2 (T1)"
+    },
+    {
+      "name": "spool_3",
+      "kind": "cyl",
+      "r": 100.0,
+      "len": 70,
+      "axis": "x",
+      "pos": [
+        50,
+        340,
+        136.752
+      ],
+      "color": "#1e88e5",
+      "label": "1 kg spool, lane 3 (T2)"
+    },
+    {
+      "name": "spool_4",
+      "kind": "cyl",
+      "r": 100.0,
+      "len": 70,
+      "axis": "x",
+      "pos": [
+        150,
+        340,
+        136.752
+      ],
+      "color": "#fdd835",
+      "label": "1 kg spool, lane 4 (T3)"
+    },
+    {
+      "name": "roller_rod_0_0",
+      "kind": "cyl",
+      "r": 4,
+      "len": 94.0,
+      "axis": "x",
+      "pos": [
+        -150,
+        300,
+        30
+      ],
+      "color": "#90a4ae",
+      "label": "8 mm rod, 92 mm (purchased)"
+    },
+    {
+      "name": "roller_rod_0_1",
+      "kind": "cyl",
+      "r": 4,
+      "len": 94.0,
+      "axis": "x",
+      "pos": [
+        -150,
+        380,
+        30
+      ],
+      "color": "#90a4ae",
+      "label": "8 mm rod, 92 mm (purchased)"
+    },
+    {
+      "name": "roller_rod_1_0",
+      "kind": "cyl",
+      "r": 4,
+      "len": 94.0,
+      "axis": "x",
+      "pos": [
+        -50,
+        300,
+        30
+      ],
+      "color": "#90a4ae",
+      "label": "8 mm rod, 92 mm (purchased)"
+    },
+    {
+      "name": "roller_rod_1_1",
+      "kind": "cyl",
+      "r": 4,
+      "len": 94.0,
+      "axis": "x",
+      "pos": [
+        -50,
+        380,
+        30
+      ],
+      "color": "#90a4ae",
+      "label": "8 mm rod, 92 mm (purchased)"
+    },
+    {
+      "name": "roller_rod_2_0",
+      "kind": "cyl",
+      "r": 4,
+      "len": 94.0,
+      "axis": "x",
+      "pos": [
+        50,
+        300,
+        30
+      ],
+      "color": "#90a4ae",
+      "label": "8 mm rod, 92 mm (purchased)"
+    },
+    {
+      "name": "roller_rod_2_1",
+      "kind": "cyl",
+      "r": 4,
+      "len": 94.0,
+      "axis": "x",
+      "pos": [
+        50,
+        380,
+        30
+      ],
+      "color": "#90a4ae",
+      "label": "8 mm rod, 92 mm (purchased)"
+    },
+    {
+      "name": "roller_rod_3_0",
+      "kind": "cyl",
+      "r": 4,
+      "len": 94.0,
+      "axis": "x",
+      "pos": [
+        150,
+        300,
+        30
+      ],
+      "color": "#90a4ae",
+      "label": "8 mm rod, 92 mm (purchased)"
+    },
+    {
+      "name": "roller_rod_3_1",
+      "kind": "cyl",
+      "r": 4,
+      "len": 94.0,
+      "axis": "x",
+      "pos": [
+        150,
+        380,
+        30
+      ],
+      "color": "#90a4ae",
+      "label": "8 mm rod, 92 mm (purchased)"
+    },
+    {
+      "name": "feed_tube_1",
+      "kind": "tube",
+      "r": 2.0,
+      "points": [
+        [
+          -150.0,
+          249.53,
+          62.94
+        ],
+        [
+          -149.79,
+          244.04,
+          74.62
+        ],
+        [
+          -149.18,
+          238.95,
+          86.82
+        ],
+        [
+          -148.18,
+          234.23,
+          99.5
+        ],
+        [
+          -146.82,
+          229.84,
+          112.61
+        ],
+        [
+          -145.13,
+          225.77,
+          126.11
+        ],
+        [
+          -143.12,
+          221.96,
+          139.96
+        ],
+        [
+          -140.81,
+          218.4,
+          154.11
+        ],
+        [
+          -138.23,
+          215.06,
+          168.52
+        ],
+        [
+          -135.4,
+          211.89,
+          183.15
+        ],
+        [
+          -132.34,
+          208.87,
+          197.94
+        ],
+        [
+          -129.07,
+          205.97,
+          212.86
+        ],
+        [
+          -125.62,
+          203.15,
+          227.86
+        ],
+        [
+          -122.0,
+          200.39,
+          242.9
+        ],
+        [
+          -118.24,
+          197.65,
+          257.94
+        ],
+        [
+          -114.36,
+          194.91,
+          272.92
+        ],
+        [
+          -110.38,
+          192.13,
+          287.81
+        ],
+        [
+          -106.33,
+          189.27,
+          302.57
+        ],
+        [
+          -102.22,
+          186.31,
+          317.14
+        ],
+        [
+          -98.08,
+          183.22,
+          331.48
+        ],
+        [
+          -93.92,
+          179.97,
+          345.55
+        ],
+        [
+          -89.78,
+          176.51,
+          359.31
+        ],
+        [
+          -85.67,
+          172.83,
+          372.71
+        ],
+        [
+          -81.62,
+          168.89,
+          385.71
+        ],
+        [
+          -77.64,
+          164.66,
+          398.26
+        ],
+        [
+          -73.76,
+          160.11,
+          410.32
+        ],
+        [
+          -70.0,
+          155.21,
+          421.85
+        ],
+        [
+          -66.38,
+          149.92,
+          432.8
+        ],
+        [
+          -62.93,
+          144.21,
+          443.12
+        ],
+        [
+          -59.66,
+          138.06,
+          452.78
+        ],
+        [
+          -56.6,
+          131.43,
+          461.73
+        ],
+        [
+          -53.77,
+          124.28,
+          469.92
+        ],
+        [
+          -51.19,
+          116.6,
+          477.31
+        ],
+        [
+          -48.88,
+          108.34,
+          483.86
+        ],
+        [
+          -46.87,
+          99.48,
+          489.53
+        ],
+        [
+          -45.18,
+          89.98,
+          494.26
+        ],
+        [
+          -43.82,
+          79.81,
+          498.02
+        ],
+        [
+          -42.82,
+          68.95,
+          500.76
+        ],
+        [
+          -42.21,
+          57.36,
+          502.43
+        ],
+        [
+          -42.0,
+          45.0,
+          503.0
+        ]
+      ],
+      "color": "#e53935",
+      "label": "PTFE 4/2, spool 1 \u2192 MMU inlet 1"
+    },
+    {
+      "name": "feed_tube_2",
+      "kind": "tube",
+      "r": 2.0,
+      "points": [
+        [
+          -50.0,
+          249.53,
+          62.94
+        ],
+        [
+          -49.93,
+          244.15,
+          74.39
+        ],
+        [
+          -49.73,
+          239.14,
+          86.38
+        ],
+        [
+          -49.39,
+          234.48,
+          98.88
+        ],
+        [
+          -48.94,
+          230.13,
+          111.83
+        ],
+        [
+          -48.38,
+          226.08,
+          125.19
+        ],
+        [
+          -47.71,
+          222.27,
+          138.92
+        ],
+        [
+          -46.94,
+          218.69,
+          152.97
+        ],
+        [
+          -46.08,
+          215.31,
+          167.3
+        ],
+        [
+          -45.13,
+          212.1,
+          181.86
+        ],
+        [
+          -44.11,
+          209.02,
+          196.6
+        ],
+        [
+          -43.02,
+          206.05,
+          211.49
+        ],
+        [
+          -41.87,
+          203.16,
+          226.47
+        ],
+        [
+          -40.67,
+          200.31,
+          241.51
+        ],
+        [
+          -39.41,
+          197.48,
+          256.55
+        ],
+        [
+          -38.12,
+          194.64,
+          271.55
+        ],
+        [
+          -36.79,
+          191.75,
+          286.47
+        ],
+        [
+          -35.44,
+          188.79,
+          301.26
+        ],
+        [
+          -34.07,
+          185.73,
+          315.87
+        ],
+        [
+          -32.69,
+          182.54,
+          330.27
+        ],
+        [
+          -31.31,
+          179.19,
+          344.4
+        ],
+        [
+          -29.93,
+          175.64,
+          358.23
+        ],
+        [
+          -28.56,
+          171.88,
+          371.7
+        ],
+        [
+          -27.21,
+          167.86,
+          384.77
+        ],
+        [
+          -25.88,
+          163.56,
+          397.4
+        ],
+        [
+          -24.59,
+          158.95,
+          409.54
+        ],
+        [
+          -23.33,
+          154.0,
+          421.15
+        ],
+        [
+          -22.13,
+          148.67,
+          432.18
+        ],
+        [
+          -20.98,
+          142.95,
+          442.58
+        ],
+        [
+          -19.89,
+          136.79,
+          452.32
+        ],
+        [
+          -18.87,
+          130.18,
+          461.34
+        ],
+        [
+          -17.92,
+          123.07,
+          469.6
+        ],
+        [
+          -17.06,
+          115.45,
+          477.06
+        ],
+        [
+          -16.29,
+          107.27,
+          483.67
+        ],
+        [
+          -15.62,
+          98.52,
+          489.39
+        ],
+        [
+          -15.06,
+          89.15,
+          494.17
+        ],
+        [
+          -14.61,
+          79.15,
+          497.97
+        ],
+        [
+          -14.27,
+          68.48,
+          500.73
+        ],
+        [
+          -14.07,
+          57.1,
+          502.43
+        ],
+        [
+          -14.0,
+          45.0,
+          503.0
+        ]
+      ],
+      "color": "#43a047",
+      "label": "PTFE 4/2, spool 2 \u2192 MMU inlet 2"
+    },
+    {
+      "name": "feed_tube_3",
+      "kind": "tube",
+      "r": 2.0,
+      "points": [
+        [
+          50.0,
+          249.53,
+          62.94
+        ],
+        [
+          49.93,
+          244.15,
+          74.39
+        ],
+        [
+          49.73,
+          239.14,
+          86.38
+        ],
+        [
+          49.39,
+          234.48,
+          98.88
+        ],
+        [
+          48.94,
+          230.13,
+          111.83
+        ],
+        [
+          48.38,
+          226.08,
+          125.19
+        ],
+        [
+          47.71,
+          222.27,
+          138.92
+        ],
+        [
+          46.94,
+          218.69,
+          152.97
+        ],
+        [
+          46.08,
+          215.31,
+          167.3
+        ],
+        [
+          45.13,
+          212.1,
+          181.86
+        ],
+        [
+          44.11,
+          209.02,
+          196.6
+        ],
+        [
+          43.02,
+          206.05,
+          211.49
+        ],
+        [
+          41.87,
+          203.16,
+          226.47
+        ],
+        [
+          40.67,
+          200.31,
+          241.51
+        ],
+        [
+          39.41,
+          197.48,
+          256.55
+        ],
+        [
+          38.12,
+          194.64,
+          271.55
+        ],
+        [
+          36.79,
+          191.75,
+          286.47
+        ],
+        [
+          35.44,
+          188.79,
+          301.26
+        ],
+        [
+          34.07,
+          185.73,
+          315.87
+        ],
+        [
+          32.69,
+          182.54,
+          330.27
+        ],
+        [
+          31.31,
+          179.19,
+          344.4
+        ],
+        [
+          29.93,
+          175.64,
+          358.23
+        ],
+        [
+          28.56,
+          171.88,
+          371.7
+        ],
+        [
+          27.21,
+          167.86,
+          384.77
+        ],
+        [
+          25.88,
+          163.56,
+          397.4
+        ],
+        [
+          24.59,
+          158.95,
+          409.54
+        ],
+        [
+          23.33,
+          154.0,
+          421.15
+        ],
+        [
+          22.13,
+          148.67,
+          432.18
+        ],
+        [
+          20.98,
+          142.95,
+          442.58
+        ],
+        [
+          19.89,
+          136.79,
+          452.32
+        ],
+        [
+          18.87,
+          130.18,
+          461.34
+        ],
+        [
+          17.92,
+          123.07,
+          469.6
+        ],
+        [
+          17.06,
+          115.45,
+          477.06
+        ],
+        [
+          16.29,
+          107.27,
+          483.67
+        ],
+        [
+          15.62,
+          98.52,
+          489.39
+        ],
+        [
+          15.06,
+          89.15,
+          494.17
+        ],
+        [
+          14.61,
+          79.15,
+          497.97
+        ],
+        [
+          14.27,
+          68.48,
+          500.73
+        ],
+        [
+          14.07,
+          57.1,
+          502.43
+        ],
+        [
+          14.0,
+          45.0,
+          503.0
+        ]
+      ],
+      "color": "#1e88e5",
+      "label": "PTFE 4/2, spool 3 \u2192 MMU inlet 3"
+    },
+    {
+      "name": "feed_tube_4",
+      "kind": "tube",
+      "r": 2.0,
+      "points": [
+        [
+          150.0,
+          249.53,
+          62.94
+        ],
+        [
+          149.79,
+          244.04,
+          74.62
+        ],
+        [
+          149.18,
+          238.95,
+          86.82
+        ],
+        [
+          148.18,
+          234.23,
+          99.5
+        ],
+        [
+          146.82,
+          229.84,
+          112.61
+        ],
+        [
+          145.13,
+          225.77,
+          126.11
+        ],
+        [
+          143.12,
+          221.96,
+          139.96
+        ],
+        [
+          140.81,
+          218.4,
+          154.11
+        ],
+        [
+          138.23,
+          215.06,
+          168.52
+        ],
+        [
+          135.4,
+          211.89,
+          183.15
+        ],
+        [
+          132.34,
+          208.87,
+          197.94
+        ],
+        [
+          129.07,
+          205.97,
+          212.86
+        ],
+        [
+          125.62,
+          203.15,
+          227.86
+        ],
+        [
+          122.0,
+          200.39,
+          242.9
+        ],
+        [
+          118.24,
+          197.65,
+          257.94
+        ],
+        [
+          114.36,
+          194.91,
+          272.92
+        ],
+        [
+          110.38,
+          192.13,
+          287.81
+        ],
+        [
+          106.33,
+          189.27,
+          302.57
+        ],
+        [
+          102.22,
+          186.31,
+          317.14
+        ],
+        [
+          98.08,
+          183.22,
+          331.48
+        ],
+        [
+          93.92,
+          179.97,
+          345.55
+        ],
+        [
+          89.78,
+          176.51,
+          359.31
+        ],
+        [
+          85.67,
+          172.83,
+          372.71
+        ],
+        [
+          81.62,
+          168.89,
+          385.71
+        ],
+        [
+          77.64,
+          164.66,
+          398.26
+        ],
+        [
+          73.76,
+          160.11,
+          410.32
+        ],
+        [
+          70.0,
+          155.21,
+          421.85
+        ],
+        [
+          66.38,
+          149.92,
+          432.8
+        ],
+        [
+          62.93,
+          144.21,
+          443.12
+        ],
+        [
+          59.66,
+          138.06,
+          452.78
+        ],
+        [
+          56.6,
+          131.43,
+          461.73
+        ],
+        [
+          53.77,
+          124.28,
+          469.92
+        ],
+        [
+          51.19,
+          116.6,
+          477.31
+        ],
+        [
+          48.88,
+          108.34,
+          483.86
+        ],
+        [
+          46.87,
+          99.48,
+          489.53
+        ],
+        [
+          45.18,
+          89.98,
+          494.26
+        ],
+        [
+          43.82,
+          79.81,
+          498.02
+        ],
+        [
+          42.82,
+          68.95,
+          500.76
+        ],
+        [
+          42.21,
+          57.36,
+          502.43
+        ],
+        [
+          42.0,
+          45.0,
+          503.0
+        ]
+      ],
+      "color": "#fdd835",
+      "label": "PTFE 4/2, spool 4 \u2192 MMU inlet 4"
+    },
+    {
+      "name": "bowden_to_extruder",
+      "kind": "tube",
+      "r": 2.0,
+      "points": [
+        [
+          0,
+          -145,
+          503.0
+        ],
+        [
+          -0.07,
+          -150.69,
+          503.06
+        ],
+        [
+          -0.27,
+          -156.4,
+          503.22
+        ],
+        [
+          -0.6,
+          -162.12,
+          503.49
+        ],
+        [
+          -1.07,
+          -167.84,
+          503.85
+        ],
+        [
+          -1.67,
+          -173.56,
+          504.28
+        ],
+        [
+          -2.41,
+          -179.26,
+          504.79
+        ],
+        [
+          -3.27,
+          -184.94,
+          505.36
+        ],
+        [
+          -4.27,
+          -190.58,
+          505.98
+        ],
+        [
+          -5.41,
+          -196.18,
+          506.65
+        ],
+        [
+          -6.67,
+          -201.73,
+          507.35
+        ],
+        [
+          -8.07,
+          -207.22,
+          508.07
+        ],
+        [
+          -9.6,
+          -212.64,
+          508.81
+        ],
+        [
+          -11.26,
+          -217.98,
+          509.56
+        ],
+        [
+          -13.05,
+          -223.24,
+          510.3
+        ],
+        [
+          -14.97,
+          -228.39,
+          511.02
+        ],
+        [
+          -17.03,
+          -233.45,
+          511.73
+        ],
+        [
+          -19.21,
+          -238.38,
+          512.4
+        ],
+        [
+          -21.53,
+          -243.2,
+          513.03
+        ],
+        [
+          -23.98,
+          -247.88,
+          513.61
+        ],
+        [
+          -26.55,
+          -252.43,
+          514.13
+        ],
+        [
+          -29.26,
+          -256.82,
+          514.58
+        ],
+        [
+          -32.1,
+          -261.05,
+          514.95
+        ],
+        [
+          -35.06,
+          -265.12,
+          515.23
+        ],
+        [
+          -38.16,
+          -269.0,
+          515.41
+        ],
+        [
+          -41.39,
+          -272.71,
+          515.49
+        ],
+        [
+          -44.74,
+          -276.21,
+          515.45
+        ],
+        [
+          -48.22,
+          -279.52,
+          515.28
+        ],
+        [
+          -51.83,
+          -282.61,
+          514.97
+        ],
+        [
+          -55.57,
+          -285.48,
+          514.53
+        ],
+        [
+          -59.44,
+          -288.12,
+          513.92
+        ],
+        [
+          -63.44,
+          -290.51,
+          513.16
+        ],
+        [
+          -67.56,
+          -292.66,
+          512.22
+        ],
+        [
+          -71.82,
+          -294.56,
+          511.1
+        ],
+        [
+          -76.2,
+          -296.18,
+          509.78
+        ],
+        [
+          -80.7,
+          -297.53,
+          508.27
+        ],
+        [
+          -85.34,
+          -298.6,
+          506.54
+        ],
+        [
+          -90.1,
+          -299.37,
+          504.59
+        ],
+        [
+          -94.99,
+          -299.84,
+          502.42
+        ],
+        [
+          -100.0,
+          -300.0,
+          500.0
+        ],
+        [
+          -108.7,
+          -299.66,
+          495.52
+        ],
+        [
+          -116.7,
+          -298.67,
+          491.15
+        ],
+        [
+          -124.02,
+          -297.05,
+          486.89
+        ],
+        [
+          -130.67,
+          -294.81,
+          482.72
+        ],
+        [
+          -136.7,
+          -291.99,
+          478.63
+        ],
+        [
+          -142.13,
+          -288.6,
+          474.64
+        ],
+        [
+          -146.98,
+          -284.67,
+          470.72
+        ],
+        [
+          -151.27,
+          -280.22,
+          466.87
+        ],
+        [
+          -155.04,
+          -275.28,
+          463.1
+        ],
+        [
+          -158.3,
+          -269.86,
+          459.38
+        ],
+        [
+          -161.09,
+          -264.0,
+          455.72
+        ],
+        [
+          -163.43,
+          -257.7,
+          452.1
+        ],
+        [
+          -165.34,
+          -251.0,
+          448.54
+        ],
+        [
+          -166.85,
+          -243.92,
+          445.0
+        ],
+        [
+          -168.0,
+          -236.49,
+          441.51
+        ],
+        [
+          -168.79,
+          -228.71,
+          438.03
+        ],
+        [
+          -169.26,
+          -220.63,
+          434.58
+        ],
+        [
+          -169.43,
+          -212.25,
+          431.14
+        ],
+        [
+          -169.34,
+          -203.61,
+          427.71
+        ],
+        [
+          -168.99,
+          -194.72,
+          424.29
+        ],
+        [
+          -168.43,
+          -185.61,
+          420.86
+        ],
+        [
+          -167.68,
+          -176.31,
+          417.42
+        ],
+        [
+          -166.75,
+          -166.83,
+          413.97
+        ],
+        [
+          -165.68,
+          -157.19,
+          410.49
+        ],
+        [
+          -164.5,
+          -147.43,
+          407.0
+        ],
+        [
+          -163.23,
+          -137.56,
+          403.46
+        ],
+        [
+          -161.88,
+          -127.61,
+          399.9
+        ],
+        [
+          -160.5,
+          -117.6,
+          396.28
+        ],
+        [
+          -159.11,
+          -107.55,
+          392.62
+        ],
+        [
+          -157.72,
+          -97.48,
+          388.9
+        ],
+        [
+          -156.38,
+          -87.42,
+          385.13
+        ],
+        [
+          -155.09,
+          -77.4,
+          381.28
+        ],
+        [
+          -153.89,
+          -67.42,
+          377.36
+        ],
+        [
+          -152.81,
+          -57.53,
+          373.37
+        ],
+        [
+          -151.87,
+          -47.73,
+          369.28
+        ],
+        [
+          -151.09,
+          -38.06,
+          365.11
+        ],
+        [
+          -150.5,
+          -28.53,
+          360.85
+        ],
+        [
+          -150.13,
+          -19.17,
+          356.48
+        ],
+        [
+          -150.0,
+          -10.0,
+          352.0
+        ]
+      ],
+      "color": "#eceff1",
+      "label": "PTFE 4/2, MMU outlet \u2192 stock extruder (cut to fit, gate G8)"
+    }
+  ],
+  "lanes": {
+    "x": [
+      -42,
+      -14,
+      14,
+      42
+    ],
+    "z": 503.0,
+    "cam_angles": [
+      40,
+      75,
+      110,
+      145
+    ],
+    "cam_neutral": 0
+  }
+}
