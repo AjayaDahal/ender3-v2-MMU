@@ -1,7 +1,7 @@
 # Ender-3 V2 MMU — a printable 4-colour unit for Klipper + Happy Hare
 
 <p align="center">
-  <img src="renders/01_overview.png" width="70%" alt="Ender-3 V2 with the 4-colour MMU on its top bar and four spool cradles behind it">
+  <img src="06-viewer/renders/01_overview.png" width="70%" alt="Ender-3 V2 with the 4-colour MMU on its top bar and four spool cradles behind it">
 </p>
 
 <p align="center">
@@ -20,14 +20,14 @@ assembly audits, printability tests and a colour-change simulation.
 > **Status:** the design is complete and every automated check passes, but
 > **nothing has been printed or bench-tested yet**. Treat it as a
 > well-checked prototype: print the fit coupon and the calibration set first.
-> See [PREMORTEM.md](PREMORTEM.md) for what can still go wrong.
+> See [00-project-management/PREMORTEM.md](00-project-management/PREMORTEM.md) for what can still go wrong.
 
 ---
 
 ## How a colour change works
 
 <p align="center">
-  <img src="renders/colour_change.gif" width="100%" alt="Animation of a red-to-green colour change inside the MMU: drive shaft, gears, camshaft, idlers, springs, filament and gate sensor">
+  <img src="06-viewer/renders/colour_change.gif" width="100%" alt="Animation of a red-to-green colour change inside the MMU: drive shaft, gears, camshaft, idlers, springs, filament and gate sensor">
 </p>
 
 | Step | What happens |
@@ -45,12 +45,12 @@ assembly audits, printability tests and a colour-change simulation.
 
 <table>
 <tr>
-<td width="50%"><img src="renders/02_mmu_closeup.png" alt="MMU on the Ender's top bar"><br><b>On the top bar.</b> Body with four lanes, servo + camshaft on top, NEMA 17 on the side, merger and covered electronics bay in front.</td>
-<td width="50%"><img src="renders/04_drive_train.png" alt="Drive train with the body made transparent"><br><b>Drive train</b> (body see-through). One NEMA 17 → 5 mm D-shaft → four MK8 gears. The camshaft presses one spring-loaded idler at a time.</td>
+<td width="50%"><img src="06-viewer/renders/02_mmu_closeup.png" alt="MMU on the Ender's top bar"><br><b>On the top bar.</b> Body with four lanes, servo + camshaft on top, NEMA 17 on the side, merger and covered electronics bay in front.</td>
+<td width="50%"><img src="06-viewer/renders/04_drive_train.png" alt="Drive train with the body made transparent"><br><b>Drive train</b> (body see-through). One NEMA 17 → 5 mm D-shaft → four MK8 gears. The camshaft presses one spring-loaded idler at a time.</td>
 </tr>
 <tr>
-<td><img src="renders/03_mmu_exploded.png" alt="Exploded view of the printed MMU parts"><br><b>Exploded.</b> Body, 4 idler blocks + 4 followers, camshaft, servo mount + coupler, merger, electronics plate + cover, top-bar clamps.</td>
-<td><img src="renders/05_spool_rack.png" alt="Four spool cradles"><br><b>Spool cradles.</b> Each spool rolls on two 608-bearing rollers; an angled guide feeds a PTFE tube up to its MMU inlet.</td>
+<td><img src="06-viewer/renders/03_mmu_exploded.png" alt="Exploded view of the printed MMU parts"><br><b>Exploded.</b> Body, 4 idler blocks + 4 followers, camshaft, servo mount + coupler, merger, electronics plate + cover, top-bar clamps.</td>
+<td><img src="06-viewer/renders/05_spool_rack.png" alt="Four spool cradles"><br><b>Spool cradles.</b> Each spool rolls on two 608-bearing rollers; an angled guide feeds a PTFE tube up to its MMU inlet.</td>
 </tr>
 </table>
 
@@ -96,48 +96,39 @@ gate sensor — all fixed and now guarded by tests.
 
 1. **Klipper on the plain Ender first** — flash the board, KIAUH on the Pi,
    KlipperScreen on your display, print a good single-colour cube.
-   → [FIRMWARE.md](FIRMWARE.md)
-2. **Measure your machine** (gates G1–G8). → [MEASUREMENTS.md](MEASUREMENTS.md)
-3. **Buy the parts** (~$120–135 + Pi you already own). → [BOM.md](BOM.md)
+   → [02-firmware/FIRMWARE.md](02-firmware/FIRMWARE.md)
+2. **Measure your machine** (gates G1–G8). → [01-architecture/MEASUREMENTS.md](01-architecture/MEASUREMENTS.md)
+3. **Buy the parts** (~$120–135 + Pi you already own). → [00-project-management/BOM.md](00-project-management/BOM.md)
 4. **Print** in PETG, 0.2 mm, 4 walls, 40 % gyroid, in this order:
    `fit_coupon` → calibration set (`mmu_body`, one idler block + follower,
-   `selector_camshaft`) → everything else (~875 g). STLs are in [`stl/`](stl).
-5. **Bench-test, mount, calibrate** with Happy Hare. → [PLAN.md](PLAN.md)
+   `selector_camshaft`) → everything else (~875 g). STLs are in [05-manufacturing/stl/](05-manufacturing/stl/).
+5. **Bench-test, mount, calibrate** with Happy Hare. → [00-project-management/PLAN.md](00-project-management/PLAN.md)
 
 ---
 
-## Explore the model
+## Interactive 3-D Viewer & Quick Start
 
 ```bash
-python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-.venv/bin/python cad/build_mmu.py          # regenerate STLs + viewer/manifest.json
-.venv/bin/python cad/check_mmu.py          # assembly audit
-.venv/bin/python -m pytest -q tests        # printability, mechanism, simulation tests
-.venv/bin/python sim/colour_change.py      # simulation report
-.venv/bin/python sim/animate_change.py     # renders/colour_change.gif
-.venv/bin/python tools/render_preview.py   # renders/0*.png
-python3 -m http.server                     # interactive 3D viewer: http://localhost:8000/viewer/
+python3 06-viewer/serve_viewer.py                  # -> http://127.0.0.1:28773/viewer/
+.venv/bin/python design/build_mmu.py               # regenerate STLs + 06-viewer/viewer/manifest.json
+.venv/bin/python 06-viewer/make_viewer.py          # sync viewer assets & print-bed metadata
+.venv/bin/python design/check_mmu.py               # 80-check assembly audit
+.venv/bin/python -m pytest -q tests                # 104 printability, mechanism & simulation tests
+.venv/bin/python 04-simulation/sim/colour_change.py
 ```
 
-The viewer (Three.js, needs WebGL) has exploded view, per-part toggles,
-hover labels and a tool-change demo.
+## Repository Map
 
-## Repository layout
-
-```
-cad/build_mmu.py        parametric build123d source: every part, assembly, routes
-cad/check_mmu.py        assembly + mechanism audit
-sim/colour_change.py    colour-change simulation
-sim/animate_change.py   mechanism animation (GIF)
-tests/                  printability, mechanism and simulation tests
-stl/                    printable parts (generated)
-viewer/                 Three.js viewer + manifest.json (generated)
-renders/                README images + animation (generated)
-tools/render_preview.py shaded preview renders (matplotlib)
-render_mmu.py           optional Blender renders
-docs/history/           earlier design reviews
-PLAN.md · FIRMWARE.md · MEASUREMENTS.md · BOM.md · PREMORTEM.md
-```
+| Folder | Content |
+|---|---|
+| [00-project-management](00-project-management/README.md) | [PLAN.md](00-project-management/PLAN.md), [BOM.md](00-project-management/BOM.md), [PREMORTEM.md](00-project-management/PREMORTEM.md), `history/` |
+| [01-architecture](01-architecture/README.md) | [MEASUREMENTS.md](01-architecture/MEASUREMENTS.md) (machine gates G1–G8) |
+| [02-firmware](02-firmware/README.md) | [FIRMWARE.md](02-firmware/FIRMWARE.md) (Klipper + Happy Hare + Pico) |
+| [03-cad](03-cad/README.md) | [README_CAD.md](03-cad/README_CAD.md) (CAD architecture & part specs) |
+| [04-simulation](04-simulation/README.md) | Colour-change physics simulation & mechanism GIF generator (`sim/`) |
+| [05-manufacturing](05-manufacturing/README.md) | Print-ready PETG STL meshes (`stl/`) |
+| [06-viewer](06-viewer/README.md) | Offline Three.js r160 Mach-X-template viewer (`viewer/`), renders (`renders/`), `render_mmu.py` |
+| `design/`, `tests/`, `tools/` | Parametric build123d source (`build_mmu.py`, `check_mmu.py`), 104-test pytest suite, preview renderer |
 
 ## Credits
 

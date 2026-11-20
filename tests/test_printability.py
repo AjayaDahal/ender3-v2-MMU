@@ -15,7 +15,7 @@ import pytest
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
 sys.path.insert(0, HERE)
-sys.path.insert(0, os.path.join(ROOT, "cad"))
+sys.path.insert(0, os.path.join(ROOT, "design"))
 
 import build_mmu as B  # noqa: E402
 import check_mmu  # noqa: E402
@@ -114,7 +114,7 @@ def test_merger_bends_are_gentle():
 
 
 def test_bom_print_table_matches_cad():
-    bom = open(os.path.join(ROOT, "BOM.md")).read()
+    bom = open(os.path.join(ROOT, "00-project-management", "BOM.md")).read()
     listed = set(re.findall(r"^\| `(\w+)`", bom, re.M))
     assert listed == set(PARTS), f"BOM vs CAD: {listed ^ set(PARTS)}"
     assert f"3 × {B.IDLER_PIN_LEN:g}" in bom, "idler pin length in BOM must match the block width"
@@ -146,11 +146,11 @@ def test_teardrop_is_circle_plus_roof():
 
 
 def test_drive_and_cam_are_keyed():
-    bom = open(os.path.join(ROOT, "BOM.md")).read()
+    bom = open(os.path.join(ROOT, "00-project-management", "BOM.md")).read()
     assert "D-shaft" in bom, "gears need a flat to bite on"
     assert "M3 × 4 heat-set" in bom, "grub screws go into inserts, not PETG"
 
 
 def test_fit_coupon_is_printable_first():
     assert "fit_coupon" in PARTS
-    assert "fit_coupon" in open(os.path.join(ROOT, "PREMORTEM.md")).read()
+    assert "fit_coupon" in open(os.path.join(ROOT, "00-project-management", "PREMORTEM.md")).read()

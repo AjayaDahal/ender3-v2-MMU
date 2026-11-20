@@ -133,8 +133,8 @@ Z0 = TOPBAR_TOP_Z - CLAMP_CHANNEL + CLAMP_H   # body bottom, world = 473
 CLAMP_X = 55
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(BASE, "..", "stl")
-MANIFEST = os.path.join(BASE, "..", "viewer", "manifest.json")
+OUT = os.path.join(BASE, "..", "05-manufacturing", "stl")
+MANIFEST = os.path.join(BASE, "..", "06-viewer", "viewer", "manifest.json")
 
 
 # ---------------------------------------------------------------- helpers

@@ -22,7 +22,16 @@
       ],
       "qty": 1,
       "color": "#2f6db5",
-      "label": "MMU body \u2014 4 lanes, drive shaft + 4 gear pockets, idler slots, cam towers"
+      "label": "MMU body \u2014 4 lanes, drive shaft + 4 gear pockets, idler slots, cam towers",
+      "url": "parts/mmu_body.stl",
+      "print_stl": "print_stls/mmu_body.stl",
+      "stl_download": "../../05-manufacturing/stl/mmu_body.stl",
+      "id": "mmu_body#1",
+      "dims_mm": [
+        160.0,
+        70.0,
+        70.1
+      ]
     },
     {
       "name": "idler_block",
@@ -44,7 +53,16 @@
       ],
       "qty": 4,
       "color": "#00897b",
-      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 1)"
+      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 1)",
+      "url": "parts/idler_block.stl",
+      "print_stl": "print_stls/idler_block.stl",
+      "stl_download": "../../05-manufacturing/stl/idler_block.stl",
+      "id": "idler_block#2",
+      "dims_mm": [
+        12.0,
+        26.0,
+        10.0
+      ]
     },
     {
       "name": "idler_block",
@@ -66,7 +84,16 @@
       ],
       "qty": 4,
       "color": "#00897b",
-      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 2)"
+      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 2)",
+      "url": "parts/idler_block.stl",
+      "print_stl": "print_stls/idler_block.stl",
+      "stl_download": "../../05-manufacturing/stl/idler_block.stl",
+      "id": "idler_block#3",
+      "dims_mm": [
+        12.0,
+        26.0,
+        10.0
+      ]
     },
     {
       "name": "idler_block",
@@ -88,7 +115,16 @@
       ],
       "qty": 4,
       "color": "#00897b",
-      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 3)"
+      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 3)",
+      "url": "parts/idler_block.stl",
+      "print_stl": "print_stls/idler_block.stl",
+      "stl_download": "../../05-manufacturing/stl/idler_block.stl",
+      "id": "idler_block#4",
+      "dims_mm": [
+        12.0,
+        26.0,
+        10.0
+      ]
     },
     {
       "name": "idler_block",
@@ -110,7 +146,16 @@
       ],
       "qty": 4,
       "color": "#00897b",
-      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 4)"
+      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 4)",
+      "url": "parts/idler_block.stl",
+      "print_stl": "print_stls/idler_block.stl",
+      "stl_download": "../../05-manufacturing/stl/idler_block.stl",
+      "id": "idler_block#5",
+      "dims_mm": [
+        12.0,
+        26.0,
+        10.0
+      ]
     },
     {
       "name": "idler_follower",
@@ -132,7 +177,16 @@
       ],
       "qty": 4,
       "color": "#4db6ac",
-      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 1)"
+      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 1)",
+      "url": "parts/idler_follower.stl",
+      "print_stl": "print_stls/idler_follower.stl",
+      "stl_download": "../../05-manufacturing/stl/idler_follower.stl",
+      "id": "idler_follower#6",
+      "dims_mm": [
+        12.0,
+        26.0,
+        9.5
+      ]
     },
     {
       "name": "idler_follower",
@@ -154,7 +208,16 @@
       ],
       "qty": 4,
       "color": "#4db6ac",
-      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 2)"
+      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 2)",
+      "url": "parts/idler_follower.stl",
+      "print_stl": "print_stls/idler_follower.stl",
+      "stl_download": "../../05-manufacturing/stl/idler_follower.stl",
+      "id": "idler_follower#7",
+      "dims_mm": [
+        12.0,
+        26.0,
+        9.5
+      ]
     },
     {
       "name": "idler_follower",
@@ -176,7 +239,16 @@
       ],
       "qty": 4,
       "color": "#4db6ac",
-      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 3)"
+      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 3)",
+      "url": "parts/idler_follower.stl",
+      "print_stl": "print_stls/idler_follower.stl",
+      "stl_download": "../../05-manufacturing/stl/idler_follower.stl",
+      "id": "idler_follower#8",
+      "dims_mm": [
+        12.0,
+        26.0,
+        9.5
+      ]
     },
     {
       "name": "idler_follower",
@@ -198,7 +270,16 @@
       ],
       "qty": 4,
       "color": "#4db6ac",
-      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 4)"
+      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 4)",
+      "url": "parts/idler_follower.stl",
+      "print_stl": "print_stls/idler_follower.stl",
+      "stl_download": "../../05-manufacturing/stl/idler_follower.stl",
+      "id": "idler_follower#9",
+      "dims_mm": [
+        12.0,
+        26.0,
+        9.5
+      ]
     },
     {
       "name": "selector_camshaft",
@@ -220,7 +301,16 @@
       ],
       "qty": 1,
       "color": "#e65100",
-      "label": "Selector camshaft \u2014 lobes at 40/75/110/145\u00b0, shown at 0\u00b0 (all released)"
+      "label": "Selector camshaft \u2014 lobes at 40/75/110/145\u00b0, shown at 0\u00b0 (all released)",
+      "url": "parts/selector_camshaft.stl",
+      "print_stl": "print_stls/selector_camshaft.stl",
+      "stl_download": "../../05-manufacturing/stl/selector_camshaft.stl",
+      "id": "selector_camshaft#10",
+      "dims_mm": [
+        110.0,
+        18.0,
+        18.5
+      ]
     },
     {
       "name": "servo_coupler",
@@ -242,7 +332,16 @@
       ],
       "qty": 1,
       "color": "#fb8c00",
-      "label": "Servo coupler \u2014 MG996R horn to 6 mm cam rod"
+      "label": "Servo coupler \u2014 MG996R horn to 6 mm cam rod",
+      "url": "parts/servo_coupler.stl",
+      "print_stl": "print_stls/servo_coupler.stl",
+      "stl_download": "../../05-manufacturing/stl/servo_coupler.stl",
+      "id": "servo_coupler#11",
+      "dims_mm": [
+        16.0,
+        19.0,
+        19.0
+      ]
     },
     {
       "name": "servo_mount",
@@ -264,7 +363,16 @@
       ],
       "qty": 1,
       "color": "#558b2f",
-      "label": "Servo mount \u2014 MG996R spline on the camshaft axis"
+      "label": "Servo mount \u2014 MG996R spline on the camshaft axis",
+      "url": "parts/servo_mount.stl",
+      "print_stl": "print_stls/servo_mount.stl",
+      "stl_download": "../../05-manufacturing/stl/servo_mount.stl",
+      "id": "servo_mount#12",
+      "dims_mm": [
+        20.0,
+        66.0,
+        76.1
+      ]
     },
     {
       "name": "merger",
@@ -286,7 +394,16 @@
       ],
       "qty": 1,
       "color": "#5e35b1",
-      "label": "Merger \u2014 4 lanes to 1 outlet (PC4-M10)"
+      "label": "Merger \u2014 4 lanes to 1 outlet (PC4-M10)",
+      "url": "parts/merger.stl",
+      "print_stl": "print_stls/merger.stl",
+      "stl_download": "../../05-manufacturing/stl/merger.stl",
+      "id": "merger#13",
+      "dims_mm": [
+        110.0,
+        100.0,
+        22.0
+      ]
     },
     {
       "name": "mcu_carrier",
@@ -308,7 +425,16 @@
       ],
       "qty": 1,
       "color": "#2e7d32",
-      "label": "MMU electronics plate \u2014 Pico (Klipper MCU), TMC2209 perfboard, 6 V servo buck"
+      "label": "MMU electronics plate \u2014 Pico (Klipper MCU), TMC2209 perfboard, 6 V servo buck",
+      "url": "parts/mcu_carrier.stl",
+      "print_stl": "print_stls/mcu_carrier.stl",
+      "stl_download": "../../05-manufacturing/stl/mcu_carrier.stl",
+      "id": "mcu_carrier#14",
+      "dims_mm": [
+        105.0,
+        95.0,
+        9.0
+      ]
     },
     {
       "name": "electronics_cover",
@@ -330,7 +456,16 @@
       ],
       "qty": 1,
       "color": "#546e7a",
-      "label": "Electronics cover \u2014 vents over the driver, cable exits"
+      "label": "Electronics cover \u2014 vents over the driver, cable exits",
+      "url": "parts/electronics_cover.stl",
+      "print_stl": "print_stls/electronics_cover.stl",
+      "stl_download": "../../05-manufacturing/stl/electronics_cover.stl",
+      "id": "electronics_cover#15",
+      "dims_mm": [
+        105.0,
+        95.0,
+        30.0
+      ]
     },
     {
       "name": "topbar_clamp",
@@ -352,7 +487,16 @@
       ],
       "qty": 2,
       "color": "#6d4c41",
-      "label": "Top-bar clamp \u00d72 \u2014 saddle on the 2020 top bar (left)"
+      "label": "Top-bar clamp \u00d72 \u2014 saddle on the 2020 top bar (left)",
+      "url": "parts/topbar_clamp.stl",
+      "print_stl": "print_stls/topbar_clamp.stl",
+      "stl_download": "../../05-manufacturing/stl/topbar_clamp.stl",
+      "id": "topbar_clamp#16",
+      "dims_mm": [
+        30.0,
+        60.0,
+        28.0
+      ]
     },
     {
       "name": "topbar_clamp",
@@ -374,7 +518,16 @@
       ],
       "qty": 2,
       "color": "#6d4c41",
-      "label": "Top-bar clamp \u00d72 \u2014 saddle on the 2020 top bar (right)"
+      "label": "Top-bar clamp \u00d72 \u2014 saddle on the 2020 top bar (right)",
+      "url": "parts/topbar_clamp.stl",
+      "print_stl": "print_stls/topbar_clamp.stl",
+      "stl_download": "../../05-manufacturing/stl/topbar_clamp.stl",
+      "id": "topbar_clamp#17",
+      "dims_mm": [
+        30.0,
+        60.0,
+        28.0
+      ]
     },
     {
       "name": "spool_cradle",
@@ -396,7 +549,16 @@
       ],
       "qty": 4,
       "color": "#6d4c41",
-      "label": "Spool cradle \u00d74 \u2014 lane 1, rollers + PTFE guide"
+      "label": "Spool cradle \u00d74 \u2014 lane 1, rollers + PTFE guide",
+      "url": "parts/spool_cradle.stl",
+      "print_stl": "print_stls/spool_cradle.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_cradle.stl",
+      "id": "spool_cradle#18",
+      "dims_mm": [
+        90.0,
+        150.0,
+        54.0
+      ]
     },
     {
       "name": "spool_cradle",
@@ -418,7 +580,16 @@
       ],
       "qty": 4,
       "color": "#6d4c41",
-      "label": "Spool cradle \u00d74 \u2014 lane 2, rollers + PTFE guide"
+      "label": "Spool cradle \u00d74 \u2014 lane 2, rollers + PTFE guide",
+      "url": "parts/spool_cradle.stl",
+      "print_stl": "print_stls/spool_cradle.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_cradle.stl",
+      "id": "spool_cradle#19",
+      "dims_mm": [
+        90.0,
+        150.0,
+        54.0
+      ]
     },
     {
       "name": "spool_cradle",
@@ -440,7 +611,16 @@
       ],
       "qty": 4,
       "color": "#6d4c41",
-      "label": "Spool cradle \u00d74 \u2014 lane 3, rollers + PTFE guide"
+      "label": "Spool cradle \u00d74 \u2014 lane 3, rollers + PTFE guide",
+      "url": "parts/spool_cradle.stl",
+      "print_stl": "print_stls/spool_cradle.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_cradle.stl",
+      "id": "spool_cradle#20",
+      "dims_mm": [
+        90.0,
+        150.0,
+        54.0
+      ]
     },
     {
       "name": "spool_cradle",
@@ -462,7 +642,16 @@
       ],
       "qty": 4,
       "color": "#6d4c41",
-      "label": "Spool cradle \u00d74 \u2014 lane 4, rollers + PTFE guide"
+      "label": "Spool cradle \u00d74 \u2014 lane 4, rollers + PTFE guide",
+      "url": "parts/spool_cradle.stl",
+      "print_stl": "print_stls/spool_cradle.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_cradle.stl",
+      "id": "spool_cradle#21",
+      "dims_mm": [
+        90.0,
+        150.0,
+        54.0
+      ]
     },
     {
       "name": "spool_roller",
@@ -484,7 +673,16 @@
       ],
       "qty": 8,
       "color": "#8d6e63",
-      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod",
+      "url": "parts/spool_roller.stl",
+      "print_stl": "print_stls/spool_roller.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_roller.stl",
+      "id": "spool_roller#22",
+      "dims_mm": [
+        28.0,
+        28.0,
+        76.0
+      ]
     },
     {
       "name": "spool_roller",
@@ -506,7 +704,16 @@
       ],
       "qty": 8,
       "color": "#8d6e63",
-      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod",
+      "url": "parts/spool_roller.stl",
+      "print_stl": "print_stls/spool_roller.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_roller.stl",
+      "id": "spool_roller#23",
+      "dims_mm": [
+        28.0,
+        28.0,
+        76.0
+      ]
     },
     {
       "name": "spool_roller",
@@ -528,7 +735,16 @@
       ],
       "qty": 8,
       "color": "#8d6e63",
-      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod",
+      "url": "parts/spool_roller.stl",
+      "print_stl": "print_stls/spool_roller.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_roller.stl",
+      "id": "spool_roller#24",
+      "dims_mm": [
+        28.0,
+        28.0,
+        76.0
+      ]
     },
     {
       "name": "spool_roller",
@@ -550,7 +766,16 @@
       ],
       "qty": 8,
       "color": "#8d6e63",
-      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod",
+      "url": "parts/spool_roller.stl",
+      "print_stl": "print_stls/spool_roller.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_roller.stl",
+      "id": "spool_roller#25",
+      "dims_mm": [
+        28.0,
+        28.0,
+        76.0
+      ]
     },
     {
       "name": "spool_roller",
@@ -572,7 +797,16 @@
       ],
       "qty": 8,
       "color": "#8d6e63",
-      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod",
+      "url": "parts/spool_roller.stl",
+      "print_stl": "print_stls/spool_roller.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_roller.stl",
+      "id": "spool_roller#26",
+      "dims_mm": [
+        28.0,
+        28.0,
+        76.0
+      ]
     },
     {
       "name": "spool_roller",
@@ -594,7 +828,16 @@
       ],
       "qty": 8,
       "color": "#8d6e63",
-      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod",
+      "url": "parts/spool_roller.stl",
+      "print_stl": "print_stls/spool_roller.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_roller.stl",
+      "id": "spool_roller#27",
+      "dims_mm": [
+        28.0,
+        28.0,
+        76.0
+      ]
     },
     {
       "name": "spool_roller",
@@ -616,7 +859,16 @@
       ],
       "qty": 8,
       "color": "#8d6e63",
-      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod",
+      "url": "parts/spool_roller.stl",
+      "print_stl": "print_stls/spool_roller.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_roller.stl",
+      "id": "spool_roller#28",
+      "dims_mm": [
+        28.0,
+        28.0,
+        76.0
+      ]
     },
     {
       "name": "spool_roller",
@@ -638,7 +890,16 @@
       ],
       "qty": 8,
       "color": "#8d6e63",
-      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod"
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod",
+      "url": "parts/spool_roller.stl",
+      "print_stl": "print_stls/spool_roller.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_roller.stl",
+      "id": "spool_roller#29",
+      "dims_mm": [
+        28.0,
+        28.0,
+        76.0
+      ]
     }
   ],
   "frame": [
@@ -2462,5 +2723,383 @@
       145
     ],
     "cam_neutral": 0
+  },
+  "vehicle": "Ender-MMU v0.4",
+  "subtitle": "4-Lane Multi-Material Unit for Creality Ender-3 V2 \u00b7 Klipper + Happy Hare",
+  "printed_parts": {
+    "electronics_cover": {
+      "name": "electronics_cover",
+      "url": "print_stls/electronics_cover.stl",
+      "stl_download": "../../05-manufacturing/stl/electronics_cover.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 1,
+      "dims_mm": [
+        105.0,
+        95.0,
+        30.0
+      ],
+      "color": "#546e7a",
+      "label": "Electronics cover \u2014 vents over the driver, cable exits",
+      "supports": false,
+      "fit_first": false
+    },
+    "fit_coupon": {
+      "name": "fit_coupon",
+      "url": "print_stls/fit_coupon.stl",
+      "stl_download": "../../05-manufacturing/stl/fit_coupon.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 1,
+      "dims_mm": [
+        80.0,
+        12.0,
+        24.0
+      ],
+      "color": "#2f6db5",
+      "label": "fit coupon",
+      "supports": false,
+      "fit_first": true
+    },
+    "idler_block": {
+      "name": "idler_block",
+      "url": "print_stls/idler_block.stl",
+      "stl_download": "../../05-manufacturing/stl/idler_block.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 4,
+      "dims_mm": [
+        12.0,
+        26.0,
+        10.0
+      ],
+      "color": "#00897b",
+      "label": "Idler block \u00d74 \u2014 623 bearing, return springs (lane 1)",
+      "supports": false,
+      "fit_first": true
+    },
+    "idler_follower": {
+      "name": "idler_follower",
+      "url": "print_stls/idler_follower.stl",
+      "stl_download": "../../05-manufacturing/stl/idler_follower.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 4,
+      "dims_mm": [
+        12.0,
+        26.0,
+        9.5
+      ],
+      "color": "#4db6ac",
+      "label": "Idler follower \u00d74 \u2014 cam ridge, preload springs, 2\u00d7 M3 limit screws (lane 1)",
+      "supports": false,
+      "fit_first": true
+    },
+    "mcu_carrier": {
+      "name": "mcu_carrier",
+      "url": "print_stls/mcu_carrier.stl",
+      "stl_download": "../../05-manufacturing/stl/mcu_carrier.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 1,
+      "dims_mm": [
+        105.0,
+        95.0,
+        9.0
+      ],
+      "color": "#2e7d32",
+      "label": "MMU electronics plate \u2014 Pico (Klipper MCU), TMC2209 perfboard, 6 V servo buck",
+      "supports": false,
+      "fit_first": false
+    },
+    "merger": {
+      "name": "merger",
+      "url": "print_stls/merger.stl",
+      "stl_download": "../../05-manufacturing/stl/merger.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 1,
+      "dims_mm": [
+        110.0,
+        100.0,
+        22.0
+      ],
+      "color": "#5e35b1",
+      "label": "Merger \u2014 4 lanes to 1 outlet (PC4-M10)",
+      "supports": false,
+      "fit_first": false
+    },
+    "mmu_body": {
+      "name": "mmu_body",
+      "url": "print_stls/mmu_body.stl",
+      "stl_download": "../../05-manufacturing/stl/mmu_body.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 1,
+      "dims_mm": [
+        160.0,
+        70.0,
+        70.1
+      ],
+      "color": "#2f6db5",
+      "label": "MMU body \u2014 4 lanes, drive shaft + 4 gear pockets, idler slots, cam towers",
+      "supports": false,
+      "fit_first": true
+    },
+    "selector_camshaft": {
+      "name": "selector_camshaft",
+      "url": "print_stls/selector_camshaft.stl",
+      "stl_download": "../../05-manufacturing/stl/selector_camshaft.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 1,
+      "dims_mm": [
+        110.0,
+        18.0,
+        18.5
+      ],
+      "color": "#e65100",
+      "label": "Selector camshaft \u2014 lobes at 40/75/110/145\u00b0, shown at 0\u00b0 (all released)",
+      "supports": true,
+      "fit_first": true
+    },
+    "servo_coupler": {
+      "name": "servo_coupler",
+      "url": "print_stls/servo_coupler.stl",
+      "stl_download": "../../05-manufacturing/stl/servo_coupler.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 1,
+      "dims_mm": [
+        16.0,
+        19.0,
+        19.0
+      ],
+      "color": "#fb8c00",
+      "label": "Servo coupler \u2014 MG996R horn to 6 mm cam rod",
+      "supports": false,
+      "fit_first": false
+    },
+    "servo_mount": {
+      "name": "servo_mount",
+      "url": "print_stls/servo_mount.stl",
+      "stl_download": "../../05-manufacturing/stl/servo_mount.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 1,
+      "dims_mm": [
+        20.0,
+        66.0,
+        76.1
+      ],
+      "color": "#558b2f",
+      "label": "Servo mount \u2014 MG996R spline on the camshaft axis",
+      "supports": false,
+      "fit_first": false
+    },
+    "spool_cradle": {
+      "name": "spool_cradle",
+      "url": "print_stls/spool_cradle.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_cradle.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 4,
+      "dims_mm": [
+        90.0,
+        150.0,
+        54.0
+      ],
+      "color": "#6d4c41",
+      "label": "Spool cradle \u00d74 \u2014 lane 1, rollers + PTFE guide",
+      "supports": false,
+      "fit_first": false
+    },
+    "spool_roller": {
+      "name": "spool_roller",
+      "url": "print_stls/spool_roller.stl",
+      "stl_download": "../../05-manufacturing/stl/spool_roller.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 8,
+      "dims_mm": [
+        28.0,
+        28.0,
+        76.0
+      ],
+      "color": "#8d6e63",
+      "label": "Spool roller \u00d78 \u2014 2\u00d7 608 on an 8 mm rod",
+      "supports": false,
+      "fit_first": false
+    },
+    "topbar_clamp": {
+      "name": "topbar_clamp",
+      "url": "print_stls/topbar_clamp.stl",
+      "stl_download": "../../05-manufacturing/stl/topbar_clamp.stl",
+      "material": "PETG (0.2mm, 4 walls, 40% gyroid)",
+      "qty": 2,
+      "dims_mm": [
+        30.0,
+        60.0,
+        28.0
+      ],
+      "color": "#6d4c41",
+      "label": "Top-bar clamp \u00d72 \u2014 saddle on the 2020 top bar (left)",
+      "supports": false,
+      "fit_first": false
+    }
+  },
+  "callouts": [
+    {
+      "id": "body",
+      "part": "mmu_body",
+      "label": "4-Lane MMU Body (Shared Shaft + 4 MK8 Gears)",
+      "offset": [
+        95,
+        -55,
+        65
+      ]
+    },
+    {
+      "id": "cam",
+      "part": "selector_camshaft",
+      "label": "Servo Camshaft (40/75/110/145\u00b0)",
+      "offset": [
+        -95,
+        -40,
+        80
+      ]
+    },
+    {
+      "id": "idler",
+      "part": "idler_block",
+      "label": "4\u00d7 Spring-Loaded Idler Blocks",
+      "offset": [
+        85,
+        55,
+        75
+      ]
+    },
+    {
+      "id": "merger",
+      "part": "merger",
+      "label": "PTFE-Lined 4\u21921 Merger + Gate Sensor",
+      "offset": [
+        -80,
+        -85,
+        25
+      ]
+    },
+    {
+      "id": "servo",
+      "part": "servo_mount",
+      "label": "MG996R Selector Servo Mount",
+      "offset": [
+        -105,
+        45,
+        50
+      ]
+    },
+    {
+      "id": "mcu",
+      "part": "mcu_carrier",
+      "label": "RP2040 Pico + Klipper/Happy Hare Bay",
+      "offset": [
+        105,
+        -60,
+        -25
+      ]
+    },
+    {
+      "id": "clamp",
+      "part": "topbar_clamp",
+      "label": "Ender-3 V2 2020 Top-Bar Clamps",
+      "offset": [
+        110,
+        40,
+        -35
+      ]
+    },
+    {
+      "id": "spool",
+      "part": "spool_cradle",
+      "label": "4\u00d7 608-Bearing Spool Cradles",
+      "offset": [
+        -100,
+        95,
+        55
+      ]
+    }
+  ],
+  "studio_renders": [
+    {
+      "file": "media/01_overview.png",
+      "title": "01 Overview",
+      "kind": "PNG"
+    },
+    {
+      "file": "media/02_mmu_closeup.png",
+      "title": "02 Mmu Closeup",
+      "kind": "PNG"
+    },
+    {
+      "file": "media/03_mmu_exploded.png",
+      "title": "03 Mmu Exploded",
+      "kind": "PNG"
+    },
+    {
+      "file": "media/04_drive_train.png",
+      "title": "04 Drive Train",
+      "kind": "PNG"
+    },
+    {
+      "file": "media/05_spool_rack.png",
+      "title": "05 Spool Rack",
+      "kind": "PNG"
+    },
+    {
+      "file": "media/colour_change.gif",
+      "title": "Colour Change",
+      "kind": "GIF"
+    },
+    {
+      "file": "media/colour_change_t01.0.png",
+      "title": "Colour Change T01.0",
+      "kind": "PNG"
+    },
+    {
+      "file": "media/colour_change_t06.0.png",
+      "title": "Colour Change T06.0",
+      "kind": "PNG"
+    },
+    {
+      "file": "media/colour_change_t09.5.png",
+      "title": "Colour Change T09.5",
+      "kind": "PNG"
+    },
+    {
+      "file": "media/colour_change_t11.5.png",
+      "title": "Colour Change T11.5",
+      "kind": "PNG"
+    },
+    {
+      "file": "media/colour_change_t18.0.png",
+      "title": "Colour Change T18.0",
+      "kind": "PNG"
+    }
+  ],
+  "checks": {
+    "assembly_audit": {
+      "passed": 80,
+      "total": 80
+    },
+    "pytest": {
+      "passed": 104,
+      "total": 104
+    },
+    "simulation": {
+      "idle_clearance_mm": 0.2,
+      "filament_strain_pct": 0.82,
+      "pla_yield_pct": 2.5,
+      "traction_drag_ratio": "3.1\u20133.4\u00d7 (1.9\u00d7 pessimistic)",
+      "servo_margin_deg": "\u00b18.2\u00b0",
+      "transitions_passed": "12 / 12 (~56 s)",
+      "filament_mass_g": 875,
+      "bom_cost_usd": "$120\u2013135 + Pi"
+    },
+    "firmware": {
+      "printer_fw": "Klipper (Ender-3 V2 mainboard)",
+      "mmu_mcu": "Raspberry Pi Pico (RP2040)",
+      "orchestrator": "Happy Hare (Type-A servo selector)",
+      "cam_angles": "40\u00b0 / 75\u00b0 / 110\u00b0 / 145\u00b0 (neutral 0\u00b0)",
+      "gate_park_mm": "16 mm behind gate microswitch"
+    }
   }
 }

@@ -29,7 +29,7 @@ sys.path.insert(0, BASE)
 import build_mmu as B  # noqa: E402
 from build123d import Vector  # noqa: E402
 
-STL_DIR = os.path.join(BASE, "..", "stl")
+STL_DIR = os.path.join(BASE, "..", "05-manufacturing", "stl")
 results = []
 
 

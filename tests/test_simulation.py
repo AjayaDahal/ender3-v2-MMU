@@ -6,7 +6,7 @@ import sys
 import pytest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "..", "sim"))
+sys.path.insert(0, os.path.join(HERE, "..", "04-simulation", "sim"))
 
 import colour_change as S  # noqa: E402
 

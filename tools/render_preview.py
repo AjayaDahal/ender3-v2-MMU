@@ -20,9 +20,9 @@ import matplotlib.pyplot as plt  # noqa: E402
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection  # noqa: E402
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-STL = os.path.join(ROOT, "stl")
-OUT = os.path.join(ROOT, "renders")
-MAN = json.load(open(os.path.join(ROOT, "viewer", "manifest.json")))
+STL = os.path.join(ROOT, "05-manufacturing", "stl")
+OUT = os.path.join(ROOT, "06-viewer", "renders")
+MAN = json.load(open(os.path.join(ROOT, "06-viewer", "viewer", "manifest.json")))
 LIGHT = np.array([-0.4, -0.7, 0.8])
 LIGHT /= np.linalg.norm(LIGHT)
 MMU_PARTS = {"mmu_body", "idler_block", "idler_follower", "selector_camshaft", "servo_coupler",

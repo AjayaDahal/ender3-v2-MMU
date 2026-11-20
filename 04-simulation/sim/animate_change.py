@@ -30,7 +30,7 @@ sys.path.insert(0, HERE)
 import colour_change as S  # noqa: E402
 
 B = S.B
-OUT = os.path.join(HERE, "..", "renders", "colour_change.gif")
+OUT = os.path.join(HERE, "..", "..", "06-viewer", "renders", "colour_change.gif")
 FPS, T_END = 12, 20.0
 SPIN_SCALE = 0.12          # gear spin slowed for visibility
 OLD, NEW = 0, 1

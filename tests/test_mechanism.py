@@ -9,7 +9,7 @@ import sys
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "..", "cad"))
+sys.path.insert(0, os.path.join(HERE, "..", "design"))
 
 import build_mmu as B  # noqa: E402
 

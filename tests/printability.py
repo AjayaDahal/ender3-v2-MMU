@@ -11,7 +11,7 @@ import numpy as np
 import trimesh
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-STL_DIR = os.path.join(BASE, "..", "stl")
+STL_DIR = os.path.join(BASE, "..", "05-manufacturing", "stl")
 
 NOZZLE = 0.4
 MIN_WALL = 1.2          # 3 perimeters at 0.4 mm

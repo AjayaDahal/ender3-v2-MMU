@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ender-MMU v0.4 · 4-Lane Klipper + Happy Hare Viewer</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="style.css" />
+    <script type="importmap">
+      { "imports": { "three": "./vendor/three.module.js", "three/addons/": "./vendor/addons/" } }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="wordmark"><i></i>ENDER<span>–</span>MMU <b>v0.4</b></div>
+      <div class="titlebar" id="hdr-summary">4-Lane Printable MMU for Ender-3 V2 · Klipper + Happy Hare · 80 Audit + 104 Pytest PASS</div>
+      <div class="hdr-actions">
+        <button id="quick-labels" class="hdr-btn active" title="Toggle 3-D part callout labels">Labels: ON</button>
+        <a href="../../00-project-management/BOM.md">View BOM</a>
+      </div>
+    </header>
+    <main>
+      <div id="stage" aria-label="Ender-MMU 3D viewer">
+        <div id="scene"></div>
+        <canvas id="overlay"></canvas>
+        <div id="callout-layer"></div>
+        <div class="stage-title">
+          <small id="eyebrow">ENDER-MMU v0.4 / KLIPPER + HAPPY HARE</small>
+          <h1 id="stage-title">4-Lane Multi-Material Unit</h1>
+        </div>
+        <div id="dimension">~875 g PETG · 4 Lanes · 1 Stepper + Servo Cam</div>
+        <div id="plate-banner" hidden>
+          <div id="plate-banner-text"></div>
+          <div class="plate-banner-btns">
+            <a id="plate-download" class="hud-btn primary" href="#" download>Download STL</a>
+            <button id="exit-plate" class="hud-btn">← Return to 3-D Assembly</button>
+          </div>
+        </div>
+        <div id="inspect-hud" hidden></div>
+        <div id="tip" hidden></div>
+        <div id="stage-foot">
+          <span id="view-label">3/4 Isometric</span>
+          <span>Drag to orbit · Scroll to zoom · Click any part or label for details · Esc to clear</span>
+        </div>
+        <div id="media" hidden>
+          <button id="media-close" class="hud-btn primary">✕ Return to 3-D Assembly</button>
+          <video id="video" controls playsinline preload="metadata" hidden></video>
+          <img id="studio-img" alt="Engineering render" hidden />
+          <div id="caption"></div>
+        </div>
+      </div>
+      <aside>
+        <div class="aside-head">
+          <div>
+            <small>ENDER-MMU / 104/104 TESTS PASS</small>
+            <h2>Engineering Inspector</h2>
+          </div>
+          <button id="collapse" aria-expanded="true">Hide</button>
+        </div>
+        <div id="controls">
+          <nav aria-label="Inspector tabs" id="tabs"></nav>
+
+          <section id="model">
+            <h3>Camera view</h3>
+            <div class="buttons" id="views"></div>
+            <h3>Color mode</h3>
+            <div class="buttons" id="colors"></div>
+            <h3>Look inside &amp; overlays</h3>
+            <label class="range">
+              Explode MMU assembly <output id="amount">0%</output>
+              <input type="range" id="explode" min="0" max="100" value="0" />
+            </label>
+            <div class="switches">
+              <label><input type="checkbox" id="labels" checked /> Part callout labels</label>
+              <label><input type="checkbox" id="showframe" checked /> Ender-3 V2 frame</label>
+              <label><input type="checkbox" id="showextras" checked /> Bought parts &amp; PTFE</label>
+              <label><input type="checkbox" id="xray" /> X-ray MMU body</label>
+              <label><input type="checkbox" id="section" /> Section cut</label>
+              <label><input type="checkbox" id="spin" /> Turntable</label>
+              <label><input type="checkbox" id="show-all-btn" checked /> All parts visible</label>
+            </div>
+            <button class="reset" id="reset">Reset view &amp; restore hidden labels/parts</button>
+          </section>
+
+          <section id="parts" hidden>
+            <h3>Assembly instances (<span id="part-count">0</span>)</h3>
+            <input type="search" id="filter" placeholder="Filter by mmu_body, idler, cam, spool..." />
+            <div class="filter-pills" id="part-filters"></div>
+            <div id="part-list"></div>
+            <div id="detail" class="card">Click any part in the 3-D model or list to inspect specs, print bed fit &amp; STL download.</div>
+          </section>
+
+          <section id="demo" hidden>
+            <h3>Tool-Change Demo (Red T0 → Green T1)</h3>
+            <div class="card">
+              <strong id="demoCaption">Printing in red (T0) — one nozzle, four filaments.</strong>
+              <div id="demoSub" class="muted" style="margin-top:4px;">Press Play to watch a full Klipper + Happy Hare colour change (40 s time-compressed).</div>
+            </div>
+            <label class="range">
+              Timeline <output id="demoT">0.0 s</output>
+              <input type="range" id="demoTime" min="0" max="40" step="0.1" value="0" />
+            </label>
+            <div class="buttons">
+              <button id="demoPlay" class="accent-btn">▶ Play: Red → Green</button>
+              <button id="demoRestart">↺ Restart</button>
+            </div>
+            <button class="reset" id="demoClose">✕ Exit Demo Mode</button>
+            <h3>Inside-MMU Mechanism Animation</h3>
+            <button class="reset accent-btn" id="open-gif-btn">▶ View Inside-MMU Colour Change GIF</button>
+          </section>
+
+          <section id="print" hidden>
+            <h3>3-D Print Bed Preview (220×220 mm PETG)</h3>
+            <div class="filter-pills" id="print-filter">
+              <button data-pf="all" class="active">All STLs</button>
+              <button data-pf="cal">Calibration / Print First</button>
+            </div>
+            <div id="solo-parts"></div>
+            <button class="reset" id="back-3d-print">← Return to Assembled 3-D MMU</button>
+          </section>
+
+          <section id="studio" hidden>
+            <h3>Preview Renders &amp; Mechanism GIF</h3>
+            <div id="studio-list"></div>
+            <button class="reset" id="back-3d">← Return to Interactive 3-D</button>
+          </section>
+
+          <section id="checks" hidden>
+            <h3>Verification Gates &amp; Simulation</h3>
+            <div id="gate-summary" class="badges"></div>
+            <dl id="sim-dl"></dl>
+            <h3>Klipper + Happy Hare Firmware</h3>
+            <dl id="fw-dl"></dl>
+          </section>
+        </div>
+      </aside>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
